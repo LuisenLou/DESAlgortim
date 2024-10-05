@@ -20,4 +20,21 @@ This Java application implements a symmetric encryption algorithm using the Data
    ```bash
    git clone https://github.com/LuisenLou/DESAlgortim.git
 
-2. Clone the repository:
+2. Navigate to the project directory:
+   ```bash
+   cd DESAlgortim
+
+3. Compile the Java program:
+   ```bash
+   javac simetricAlgoritm.java
+
+4. Run the application:
+   ```bash
+   java simetricAlgoritm
+
+5. Follow the on-screen prompts to encrypt or decrypt files.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
