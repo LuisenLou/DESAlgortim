@@ -86,9 +86,9 @@ public class simetricAlgoritm {
 
         System.out.println("El mensaje encriptado es: " + new String(cipheredBytes));
 
-        FileOutputStream writer = new FileOutputStream(newfFile, true);
-        writer.write(cipheredBytes);
-        writer.close();
+        try (FileOutputStream writer = new FileOutputStream(newfFile, true)) {
+            writer.write(cipheredBytes);
+        }
     }
 
     public static void decipher (Path fileToRead, SecretKey key, Cipher desCipher) throws InvalidKeyException, IOException, IllegalBlockSizeException, BadPaddingException {
